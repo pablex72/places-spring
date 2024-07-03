@@ -1,32 +1,4 @@
-DROP TABLE IF EXISTS provinces;
-
-DROP TABLE IF EXISTS countries;
--- Creación de tabla para países
-CREATE TABLE countries (
-    id BIGINT AUTO_INCREMENT PRIMARY KEY,
-    name VARCHAR(255) NOT NULL
-);
-
--- Creación de tabla para provincias
-CREATE TABLE provinces (
-    id BIGINT AUTO_INCREMENT PRIMARY KEY,
-    name VARCHAR(255) NOT NULL,
-    country_id BIGINT,
-    FOREIGN KEY (country_id) REFERENCES countries(id)
-);
-
--- Inserción de países
-INSERT INTO countries (name) VALUES
-('Argentina'),
-('Bolivia'),
-('Brazil'),
-('Chile'),
-('Colombia'),
-('Ecuador'),
-('Paraguay'),
-('Peru');
-
--- Inserción de provincias de Argentina
+-- Inserción de datos en la tabla provinces
 INSERT INTO provinces (name, country_id) VALUES
 ('Buenos Aires', 1),
 ('Catamarca', 1),
@@ -52,7 +24,6 @@ INSERT INTO provinces (name, country_id) VALUES
 ('Tierra del Fuego', 1),
 ('Tucumán', 1);
 
--- Inserción de provincias de Bolivia
 INSERT INTO provinces (name, country_id) VALUES
 ('Chuquisaca', 2),
 ('Cochabamba', 2),
@@ -64,7 +35,6 @@ INSERT INTO provinces (name, country_id) VALUES
 ('Santa Cruz', 2),
 ('Tarija', 2);
 
--- Inserción de provincias de Brasil
 INSERT INTO provinces (name, country_id) VALUES
 ('Acre', 3),
 ('Alagoas', 3),
@@ -94,7 +64,6 @@ INSERT INTO provinces (name, country_id) VALUES
 ('Sergipe', 3),
 ('Tocantins', 3);
 
--- Inserción de provincias de Chile
 INSERT INTO provinces (name, country_id) VALUES
 ('Arica y Parinacota', 4),
 ('Tarapacá', 4),
@@ -113,7 +82,6 @@ INSERT INTO provinces (name, country_id) VALUES
 ('Aysén', 4),
 ('Magallanes', 4);
 
--- Inserción de provincias de Colombia
 INSERT INTO provinces (name, country_id) VALUES
 ('Amazonas', 5),
 ('Antioquia', 5),
@@ -148,7 +116,6 @@ INSERT INTO provinces (name, country_id) VALUES
 ('Vaupés', 5),
 ('Vichada', 5);
 
--- Inserción de provincias de Ecuador
 INSERT INTO provinces (name, country_id) VALUES
 ('Azuay', 6),
 ('Bolívar', 6),
@@ -175,7 +142,6 @@ INSERT INTO provinces (name, country_id) VALUES
 ('Tungurahua', 6),
 ('Zamora Chinchipe', 6);
 
--- Inserción de provincias de Paraguay
 INSERT INTO provinces (name, country_id) VALUES
 ('Alto Paraguay', 7),
 ('Alto Paraná', 7),
@@ -196,7 +162,6 @@ INSERT INTO provinces (name, country_id) VALUES
 ('Presidente Hayes', 7),
 ('San Pedro', 7);
 
--- Inserción de provincias de Perú
 INSERT INTO provinces (name, country_id) VALUES
 ('Amazonas', 8),
 ('Áncash', 8),
