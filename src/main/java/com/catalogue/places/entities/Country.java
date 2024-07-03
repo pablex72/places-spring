@@ -26,5 +26,4 @@ public class Country {
     @JsonManagedReference
     private List<Province> provinces;
 
-    // Getters y Setters
 }

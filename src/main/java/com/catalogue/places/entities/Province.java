@@ -23,5 +23,4 @@ public class Province {
     @JsonBackReference
     private Country country;
 
-    // Getters y Setters
 }
