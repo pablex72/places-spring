@@ -6,3 +6,7 @@ FROM eclipse-temurin:17
 # eso me genera el JAR que es el ejecutable de la aplicacion JAVA
 #   ENTONCES se generara un SNAPSHOT.jar en target
 
+COPY target/places-0.0.1-SNAPSHOT.jar app.jar
+
+#ejecutar jar
+ENTRYPOINT ["java", "-jar","app.jar"]
