@@ -72,7 +72,7 @@ INSERT INTO provinces (name, country_id) VALUES
 ('Coquimbo', 4),
 ('Valparaíso', 4),
 ('Región Metropolitana de Santiago', 4),
-('O\'Higgins', 4),
+('O Higgins', 4),
 ('Maule', 4),
 ('Ñuble', 4),
 ('Biobío', 4),
